@@ -5,3 +5,4 @@ def calc(a, b):
     quotient = a / b
 
     results = [sum, difference, product, quotient]
+    resultSum = sum(results)
