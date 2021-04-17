@@ -1,11 +1,4 @@
-import random
+import secrets
 
 def password(length):
-    return ''.join([random_char() for i in range(length)])
-
-def random_char():
-    # Characters to use in passwords.
-    CHARS = "abcdefghijklmnopqrstuvwxyz" + \
-            "ABCDEFGHIJKLMNOPQRSTUVWXYZ" + \
-            "1234567890!@#$%^&*()"
-    return CHARS[random.SystemRandom().randrange(0, len(CHARS))]
+    return secrets.token_urlsafe(length)
