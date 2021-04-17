@@ -8,4 +8,4 @@ def random_char():
     CHARS = "abcdefghijklmnopqrstuvwxyz" + \
             "ABCDEFGHIJKLMNOPQRSTUVWXYZ" + \
             "1234567890!@#$%^&*()"
-    return CHARS[random.randrange(0, len(CHARS))]
+    return CHARS[random.SystemRandom().randrange(0, len(CHARS))]
